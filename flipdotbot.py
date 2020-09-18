@@ -18,7 +18,7 @@ def welcome_message(bot, update):
 
 
 def display_message(bot, update):
-    response = requests.post("http://flipdot.openlab-augsburg.de/queue/add",
+    response = requests.post("https://flipdot.openlab-augsburg.de/api/v2/queue/add",
                              data={
                                  'text': update.message.text
                              })
